@@ -1,11 +1,15 @@
 # Machine Learning
 
-## Dataset
+## UNN (2018)
 
-**Image Segmentation Data Set**
+- Preproceessing
+- Comparison of machine learning algorithms
+- PCA
 
-The instances were drawn randomly from a database of 7 outdoor images. The images were handsegmented to create a classification for every pixel.
+## SHAD (2019)
 
-### Lab 1,2,3,4
+- Numpy/Pandas/Matplotlib
+- Introduction in Machine Learning
+- Linear models
 
-[Prepare data](./labs/prepare_dataset)
+*2018-2019*
