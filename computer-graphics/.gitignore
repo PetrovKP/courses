@@ -1,0 +1,11 @@
+Debug/
+Release/
+data/
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+
+.idea
+*.pdf
