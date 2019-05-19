@@ -1,0 +1,37 @@
+sudo: required
+
+notifications:
+  email: false
+
+os:
+  - linux
+  
+language:
+  - cpp
+  
+branches:
+  only:
+    - master
+  
+compiler:
+  - gcc-5
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-5
+      - g++-5
+      
+before_install:
+  - sudo add-apt-repository ppa:amarburg/opencv3 --yes
+  - sudo apt-get update -qq
+  
+install:
+   - export CXX="g++-5" CC="gcc-5"
+   - sudo apt-get install -y libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev libv4l-dev
+   - sudo apt-get install -y libopencv3-dev
+
+script:
+  - source build.sh
